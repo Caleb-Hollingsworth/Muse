@@ -2,7 +2,7 @@
 
 ## Project Description
 
-    My app is called Muse. Muse is defined as force that is the source of inspiration for creativity, and that's exactly what this project aims to accomplish. Users will be able to insert their name into a form which will then render a welcome accompanied by a random image from an api as well as a random quote from an api.
+- My app is called Muse. Muse is defined as force that is the source of inspiration for creativity, and that's exactly what this project aims to accomplish. Users will be able to insert their name into a form which will then render a welcome accompanied by a random image from an api as well as a random quote from an api.
 
 ## Wireframes
 
