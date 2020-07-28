@@ -34,6 +34,8 @@
 
 ### Quotes database example
 
+[Here for source for the quotes api](https://forum.freecodecamp.org/t/free-api-inspirational-quotes-json-with-code-examples/311373)
+
 ```
 {
 text: "Genius is one percent inspiration and ninety-nine percent perspiration.",
@@ -58,6 +60,8 @@ author: "Byron Pulsifer"
 ```
 
 ### Photo database example
+
+[Here is the doc for the photo api](https://pixabay.com/api/docs/)
 
 ```
 {
@@ -87,3 +91,5 @@ userImageURL: "https://cdn.pixabay.com/user/2015/11/27/06-58-54-609_250x250.jpg"
 ```
 
 ## Component Hierarchy
+
+![Untitled presentation](https://user-images.githubusercontent.com/65240952/88708927-05625600-d0da-11ea-88c6-a45dc2635382.jpg)
