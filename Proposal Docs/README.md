@@ -34,7 +34,7 @@
 
 ### Quotes database example
 
-[Here for source for the quotes api](https://forum.freecodecamp.org/t/free-api-inspirational-quotes-json-with-code-examples/311373)
+[Here for source for the quotes api](https://forum.freecodecamp.org/t/free-api-inspirational-quotes-json-with-code-examples/311373?{:target="_blank"})
 
 ```
 {
@@ -61,33 +61,38 @@ author: "Byron Pulsifer"
 
 ### Photo database example
 
-[Here is the doc for the photo api](https://pixabay.com/api/docs/)
+[Here is the doc for the photo api](https://www.pexels.com/api/documentation/#photos-search?{:target="_blank"})
 
 ```
 {
-id: 3063284,
-pageURL: "https://pixabay.com/photos/rose-flower-petal-floral-noble-3063284/",
-type: "photo",
-tags: "rose, flower, petal",
-previewURL: "https://cdn.pixabay.com/photo/2018/01/05/16/24/rose-3063284_150.jpg",
-previewWidth: 150,
-previewHeight: 99,
-webformatURL: "https://pixabay.com/get/55e0d340485aa814f1dc8460962930781d3fdde15b4c704c7c2a72d1974dcc5f_640.jpg",
-webformatWidth: 640,
-webformatHeight: 426,
-largeImageURL: "https://pixabay.com/get/55e0d340485aa814f6da8c7dda7936791337dee657596c4870267edd924dc551bf_1280.jpg",
-imageWidth: 6000,
-imageHeight: 4000,
-imageSize: 3574625,
-views: 763768,
-downloads: 481455,
-favorites: 1013,
-likes: 1169,
-comments: 264,
-user_id: 1564471,
-user: "annca",
-userImageURL: "https://cdn.pixabay.com/user/2015/11/27/06-58-54-609_250x250.jpg"
-},
+  "total_results": 10000,
+  "page": 1,
+  "per_page": 1,
+  "photos": [
+    {
+      "id": 3573351,
+      "width": 3066,
+      "height": 3968,
+      "url": "https://www.pexels.com/photo/trees-during-day-3573351/",
+      "photographer": "Lukas Rodriguez",
+      "photographer_url": "https://www.pexels.com/@lukas-rodriguez-1845331",
+      "photographer_id": 1845331,
+      "src": {
+        "original": "https://images.pexels.com/photos/3573351/pexels-photo-3573351.png",
+        "large2x": "https://images.pexels.com/photos/3573351/pexels-photo-3573351.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "large": "https://images.pexels.com/photos/3573351/pexels-photo-3573351.png?auto=compress&cs=tinysrgb&h=650&w=940",
+        "medium": "https://images.pexels.com/photos/3573351/pexels-photo-3573351.png?auto=compress&cs=tinysrgb&h=350",
+        "small": "https://images.pexels.com/photos/3573351/pexels-photo-3573351.png?auto=compress&cs=tinysrgb&h=130",
+        "portrait": "https://images.pexels.com/photos/3573351/pexels-photo-3573351.png?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+        "landscape": "https://images.pexels.com/photos/3573351/pexels-photo-3573351.png?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+        "tiny": "https://images.pexels.com/photos/3573351/pexels-photo-3573351.png?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+      },
+      "liked": false
+    }
+  ],
+  "next_page": "https://api.pexels.com/v1/search/?page=2&per_page=1&query=nature"
+}
+
 ```
 
 ## Component Hierarchy
