@@ -34,7 +34,7 @@
 
 ### Quotes database example
 
-[Here for source for the quotes api](https://forum.freecodecamp.org/t/free-api-inspirational-quotes-json-with-code-examples/311373){:target="\_blank"}
+[Here for source for the quotes api](https://forum.freecodecamp.org/t/free-api-inspirational-quotes-json-with-code-examples/311373)
 
 ```
 {
