@@ -1,39 +1,78 @@
+.page {
+}
 .header-container {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	margin-right: 5%;
 	align-items: stretch;
 }
-
 .image {
 	width: 100vw;
-	margin-top: -12%;
+	margin-top: -11%;
 	z-index: -1;
 }
 .emblem-container {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
+	z-index: 1;
 }
 .muse {
+	font-size: 3em;
 	color: transparent;
-	animation: shimmer 45s infinite;
+	-webkit-text-stroke-width: 1px;
+	animation: shimmer2 45s infinite;
 }
-@keyframes shimmer {
+@keyframes shimmer2 {
 	0% {
-		color: transparent;
+		-webkit-text-stroke-color: rgb(9, 241, 191);
 	}
 	25% {
-		color: rgb(108, 19, 209);
+		-webkit-text-stroke-color: rgb(12, 247, 235);
 	}
 	45% {
-		color: rgb(216, 23, 97);
+		-webkit-text-stroke-color: rgb(149, 4, 245);
 	}
 	60% {
-		color: rgb(14, 241, 230);
+		-webkit-text-stroke-color: rgb(8, 247, 115);
 	}
 	85% {
-		color: transparent;
+		-webkit-text-stroke-color: rgb(138, 3, 248);
 	}
+	100% {
+		-webkit-text-stroke-color: rgb(9, 241, 191);
+	}
+}
+.welcome-container {
+	z-index: 1;
+}
+.welcome-text {
+	font-size: 4em;
+	color: rgb(37, 37, 37);
+	background-color: rgba(128, 128, 128, 0.493);
+	width: 100vw;
+}
+.search-button {
+	margin-right: 3%;
+}
+.quotes {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin-top: -16%;
+	background-color: rgba(128, 128, 128, 0.493);
+	z-index: 1;
+}
+
+.pexel-logo {
+	height: 70px;
+	margin-left: 4%;
+	margin-top: 2%;
+	z-index: 1;
+}
+.search-form {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	z-index: 1;
 }

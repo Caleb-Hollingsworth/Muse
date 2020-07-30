@@ -2,14 +2,16 @@ import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
-function SearchForm() {
+function SearchForm({ setQuery, handleDisplay, setPicture }) {
 	return (
-		<Form size='lg'>
-			<Form.Control placeholder='enter name here...' />
-			<Button variant='secondary' type='submit'>
-				submit
+		<div onSubmit={handleDisplay}>
+			<Form size='lg' onSubmit={setPicture}>
+				<Form.Control onChange={setQuery} placeholder='enter name here...' />
+			</Form>
+			<Button onClick={handleDisplay} variant='outline-light' type='submit'>
+				close
 			</Button>
-		</Form>
+		</div>
 	);
 }
 

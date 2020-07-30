@@ -9,6 +9,7 @@ class App extends Component {
 		this.state = {
 			name: '',
 			displayPhoto: null,
+			query: '',
 		};
 	}
 	componentDidMount() {
@@ -17,13 +18,13 @@ class App extends Component {
 		fetch(url1, { headers: { Authorization: key } })
 			.then((res) => res.json())
 			.then((json) => {
-				console.log(json);
 				let index = Math.floor(Math.random() * 80);
 				this.setState({ displayPhoto: json.photos[index].src.landscape });
 			});
 	}
 	setPicture = (event) => {
 		event.preventDefault();
+
 		const key = process.env.REACT_APP_MYPHOTOAPI_KEY;
 		const url2 = `https://api.pexels.com/v1/search?query=${this.state.query}&per_page=1`;
 		fetch(url2, { headers: { Authorization: key } })
@@ -47,12 +48,10 @@ class App extends Component {
 	};
 
 	render() {
-		console.log(this.state.displayPhoto);
 		return (
 			<div>
 				<nav>
-					<Link to='/'>Welcome</Link>
-					<Link to='/home'>Home</Link>
+					<Link to='/'></Link>
 				</nav>
 				<main>
 					<Route
@@ -73,6 +72,8 @@ class App extends Component {
 						render={() => {
 							return (
 								<Header
+									setQuery={this.setQuery}
+									setPicture={this.setPicture}
 									name={this.state.name}
 									displayPhoto={this.state.displayPhoto}
 								/>
@@ -80,14 +81,6 @@ class App extends Component {
 						}}
 					/>
 				</main>
-				<footer>
-					<a href='https://www.pexels.com'>
-						<img
-							src='https://images.pexels.com/lib/api/pexels.png'
-							alt='images.pexels.com'
-						/>
-					</a>
-				</footer>
 			</div>
 		);
 	}
