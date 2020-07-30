@@ -1,0 +1,39 @@
+.header-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-right: 5%;
+	align-items: stretch;
+}
+
+.image {
+	width: 100vw;
+	margin-top: -12%;
+	z-index: -1;
+}
+.emblem-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+.muse {
+	color: transparent;
+	animation: shimmer 45s infinite;
+}
+@keyframes shimmer {
+	0% {
+		color: transparent;
+	}
+	25% {
+		color: rgb(108, 19, 209);
+	}
+	45% {
+		color: rgb(216, 23, 97);
+	}
+	60% {
+		color: rgb(14, 241, 230);
+	}
+	85% {
+		color: transparent;
+	}
+}
