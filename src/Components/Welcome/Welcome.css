@@ -1,0 +1,63 @@
+.welcome-page {
+	background-color: rgba(58, 57, 57, 0.534);
+	height: 100vh;
+}
+.welcome-header {
+	display: flex;
+	flex-direction: column;
+	margin-top: -4%;
+}
+
+.welcome-form {
+	display: grid;
+	grid-template-columns: 2fr 2fr 2fr 2fr;
+	grid-template-rows: 2fr 2fr 2fr;
+}
+.enter-form {
+	grid-column: 2 / span 1;
+	grid-row: 2 / span 1;
+	z-index: 1;
+}
+.welcome-button {
+	grid-column: 3 / span 1;
+	grid-row: 3 / span 1;
+	z-index: 1;
+}
+
+.welcome-image {
+	margin-top: 0.1%;
+	width: 100vw;
+}
+.muse-title {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin-right: 5%;
+	font-size: 2em;
+	margin-top: 5%;
+	margin-bottom: -4.05%;
+
+	color: transparent;
+	-webkit-text-stroke-width: 1px;
+	animation: shimmer2 45s infinite;
+}
+@keyframes shimmer2 {
+	0% {
+		-webkit-text-stroke-color: rgb(149, 4, 245);
+	}
+	25% {
+		-webkit-text-stroke-color: rgb(12, 247, 235);
+	}
+	45% {
+		-webkit-text-stroke-color: transparent;
+	}
+	55% {
+		-webkit-text-stroke-color: rgb(16, 250, 199);
+	}
+	85% {
+		-webkit-text-stroke-color: rgb(11, 245, 147);
+	}
+	100% {
+		-webkit-text-stroke-color: rgb(138, 3, 248);
+	}
+}

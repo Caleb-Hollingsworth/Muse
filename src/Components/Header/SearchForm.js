@@ -6,11 +6,8 @@ function SearchForm({ setQuery, handleDisplay, setPicture }) {
 	return (
 		<div onSubmit={handleDisplay}>
 			<Form size='lg' onSubmit={setPicture}>
-				<Form.Control onChange={setQuery} placeholder='enter name here...' />
+				<Form.Control onChange={setQuery} placeholder='search for photos...' />
 			</Form>
-			<Button onClick={handleDisplay} variant='outline-light' type='submit'>
-				close
-			</Button>
 		</div>
 	);
 }

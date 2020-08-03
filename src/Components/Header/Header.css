@@ -1,78 +1,80 @@
-.page {
+.main-page {
+	background-color: rgba(58, 57, 57, 0.534);
+	height: 100vh;
 }
-.header-container {
-	display: flex;
-	flex-direction: column;
-	margin-right: 5%;
-	align-items: stretch;
-}
-.image {
-	width: 100vw;
-	margin-top: -11%;
-	z-index: -1;
-}
-.emblem-container {
+.header {
 	display: flex;
 	flex-direction: row;
+	justify-content: flex-start;
+	height: 10vh;
+	width: 100vw;
+	align-items: center;
+}
+.welcome-text {
+	margin-left: 5%;
+	width: 50vw;
+}
+.muse-container {
+	display: flex;
+	align-items: center;
 	justify-content: flex-end;
-	z-index: 1;
+	width: 50vw;
 }
 .muse {
-	font-size: 3em;
+	font-size: 2em;
+	margin-left: 5%;
+	margin-right: 10%;
 	color: transparent;
 	-webkit-text-stroke-width: 1px;
 	animation: shimmer2 45s infinite;
 }
+.search-button {
+	margin-left: 5%;
+}
+.search-form {
+	width: 25vw;
+}
+.feature {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100vw;
+}
+.image {
+	width: 100vw;
+}
+.quotes {
+	text-align: right;
+	margin-top: -20%;
+	color: rgb(24, 24, 24);
+	background-color: rgba(151, 151, 151, 0.329);
+	width: 100vw;
+}
+.quote {
+	margin-right: 2%;
+}
+.pexel-logo {
+	width: 15%;
+	margin-left: 5%;
+	margin-top: 1%;
+}
 @keyframes shimmer2 {
 	0% {
-		-webkit-text-stroke-color: rgb(9, 241, 191);
+		-webkit-text-stroke-color: rgb(149, 4, 245);
 	}
-	25% {
+	15% {
 		-webkit-text-stroke-color: rgb(12, 247, 235);
 	}
 	45% {
-		-webkit-text-stroke-color: rgb(149, 4, 245);
+		-webkit-text-stroke-color: transparent;
 	}
-	60% {
+	50% {
 		-webkit-text-stroke-color: rgb(8, 247, 115);
 	}
-	85% {
-		-webkit-text-stroke-color: rgb(138, 3, 248);
+	75% {
+		-webkit-text-stroke-color: rgb(238, 16, 101);
 	}
 	100% {
-		-webkit-text-stroke-color: rgb(9, 241, 191);
+		-webkit-text-stroke-color: rgb(149, 4, 245);
 	}
-}
-.welcome-container {
-	z-index: 1;
-}
-.welcome-text {
-	font-size: 4em;
-	color: rgb(37, 37, 37);
-	background-color: rgba(128, 128, 128, 0.493);
-	width: 100vw;
-}
-.search-button {
-	margin-right: 3%;
-}
-.quotes {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	margin-top: -16%;
-	background-color: rgba(128, 128, 128, 0.493);
-	z-index: 1;
-}
-
-.pexel-logo {
-	height: 70px;
-	margin-left: 4%;
-	margin-top: 2%;
-	z-index: 1;
-}
-.search-form {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	z-index: 1;
 }

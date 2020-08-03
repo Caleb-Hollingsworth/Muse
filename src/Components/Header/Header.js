@@ -22,39 +22,37 @@ class Header extends Component {
 	};
 	render() {
 		return (
-			<div className='page'>
-				<header className='header-container'>
-					<div className='emblem-container'>
+			<div className='main-page'>
+				<header className='header'>
+					<h1 className='welcome-text'>welcome to muse, {this.props.name}</h1>
+					<div className='muse-container'>
+						<div className='search-form'>
+							{this.state.display && (
+								<SearchForm
+									setQuery={this.props.setQuery}
+									handleDisplay={this.handleDisplay}
+									setPicture={this.props.setPicture}
+								/>
+							)}
+						</div>
 						<Button
-							size='lg'
+							size='md'
 							variant='outline-light'
 							onClick={this.handleDisplay}
 							className='search-button'
 							type='submit'>
 							search
 						</Button>
-						<h1 className='muse' onClick={this.handleWelcome}>
-							muse
-						</h1>
+						<h2 className='muse' onClick={this.handleWelcome}>
+							MUSE
+						</h2>
 					</div>
-					<div className='welcome-container'>
-						<h1 className='welcome-text'>Welcome to muse, {this.props.name}</h1>
-					</div>
-					<div className='search-form'>
-						{this.state.display && (
-							<SearchForm
-								setQuery={this.props.setQuery}
-								handleDisplay={this.handleDisplay}
-								setPicture={this.props.setPicture}
-							/>
-						)}
-					</div>
-					<img className='image' src={this.props.displayPhoto} alt=''></img>
 				</header>
-				<main className='quotes'>
-					<Quotes />
-				</main>
-				<footer>
+				<main className='feature'>
+					<img className='image' src={this.props.displayPhoto} alt=''></img>
+					<div className='quotes'>
+						<Quotes className='quote' />
+					</div>
 					<a href='https://www.pexels.com'>
 						<img
 							className='pexel-logo'
@@ -62,7 +60,7 @@ class Header extends Component {
 							alt='images.pexels.com'
 						/>
 					</a>
-				</footer>
+				</main>
 			</div>
 		);
 	}
