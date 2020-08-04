@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
 .main-page {
 	background-color: rgba(58, 57, 57, 0.534);
 	height: 100vh;
@@ -5,34 +7,36 @@
 .header {
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-start;
-	height: 10vh;
+	align-content: center;
+
 	width: 100vw;
-	align-items: center;
 }
 .welcome-text {
 	margin-left: 5%;
 	width: 50vw;
+	font-family: 'Special Elite', cursive;
 }
 .muse-container {
+	width: 100vw;
+	margin-top: 1%;
 	display: flex;
-	align-items: center;
+	flex-direction: row;
 	justify-content: flex-end;
-	width: 50vw;
+	align-items: center;
 }
+
 .muse {
 	font-size: 2em;
-	margin-left: 5%;
-	margin-right: 10%;
+	margin-right: 2%;
 	color: transparent;
 	-webkit-text-stroke-width: 1px;
 	animation: shimmer2 45s infinite;
 }
-.search-button {
-	margin-left: 5%;
-}
+
 .search-form {
-	width: 25vw;
+	display: flex;
+	flex-direction: row;
+	margin-right: 1%;
 }
 .feature {
 	display: flex;
@@ -53,11 +57,17 @@
 .quote {
 	margin-right: 2%;
 }
-.pexel-logo {
-	width: 15%;
-	margin-left: 5%;
-	margin-top: 1%;
+.footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-top: 10%;
 }
+.pexel-logo {
+	width: 18%;
+	margin-top: -0.5%;
+}
+
 @keyframes shimmer2 {
 	0% {
 		-webkit-text-stroke-color: rgb(149, 4, 245);
@@ -76,5 +86,33 @@
 	}
 	100% {
 		-webkit-text-stroke-color: rgb(149, 4, 245);
+	}
+}
+@media only screen and (max-width: 700px) {
+	.welcome-text {
+		font-size: 1.2em;
+		margin-top: 2%;
+	}
+	.header {
+		height: 1vh;
+		justify-content: flex-end;
+	}
+	.feature {
+		margin-top: 20%;
+	}
+	.muse-container {
+		flex-direction: column-reverse;
+		margin: 0 auto;
+		justify-content: center;
+		margin-top: 10%;
+		width: 250px;
+		margin-bottom: -10%;
+	}
+	.search-form {
+		display: flex;
+		flex-direction: row;
+	}
+	.pexel-logo {
+		margin-top: -22%;
 	}
 }

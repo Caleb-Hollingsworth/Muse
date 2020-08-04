@@ -24,8 +24,8 @@ class Quotes extends Component {
 		return (
 			<div>
 				<div className='quote'>
-					<h1>{this.state.quote.text}</h1>
-					<p>-{this.state.quote.author}</p>
+					<h1 className='quote-text'>{this.state.quote.text}</h1>
+					<p className='quote-author'>-{this.state.quote.author}</p>
 				</div>
 			</div>
 		);

@@ -19,7 +19,11 @@ class App extends Component {
 			.then((res) => res.json())
 			.then((json) => {
 				let index = Math.floor(Math.random() * 80);
-				this.setState({ displayPhoto: json.photos[index].src.landscape });
+				if (window.innerWidth > 700) {
+					this.setState({ displayPhoto: json.photos[index].src.landscape });
+				} else {
+					this.setState({ displayPhoto: json.photos[index].src.portrait });
+				}
 			});
 	}
 	setPicture = (event) => {
@@ -30,7 +34,11 @@ class App extends Component {
 		fetch(url2, { headers: { Authorization: key } })
 			.then((res) => res.json())
 			.then((json) => {
-				this.setState({ displayPhoto: json.photos[0].src.landscape });
+				if (window.innerWidth > 700) {
+					this.setState({ displayPhoto: json.photos[0].src.landscape });
+				} else {
+					this.setState({ displayPhoto: json.photos[0].src.portrait });
+				}
 			});
 	};
 	setQuery = (event) => {

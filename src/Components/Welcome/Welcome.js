@@ -42,6 +42,13 @@ class Welcome extends Component {
 					className='welcome-image'
 					src={this.props.displayPhoto}
 					alt=''></img>
+				<a href='https://www.pexels.com'>
+					<img
+						className='pexel-image'
+						src='https://images.pexels.com/lib/api/pexels.png'
+						alt=''
+					/>
+				</a>
 			</div>
 		);
 	}

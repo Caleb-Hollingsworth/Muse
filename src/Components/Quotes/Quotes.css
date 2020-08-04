@@ -1,0 +1,11 @@
+.quote {
+	font-family: 'Special Elite', cursive;
+}
+@media only screen and (max-width: 700px) {
+	.quote-text {
+		font-size: 0.8em;
+	}
+	.quote-author {
+		font-size: 0.6em;
+	}
+}
