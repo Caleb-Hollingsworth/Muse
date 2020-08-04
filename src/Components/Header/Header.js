@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import SearchForm from './SearchForm';
 import Quotes from '../Quotes/Quotes';
-
 import Button from 'react-bootstrap/Button';
 import './Header.css';
 
@@ -55,16 +54,14 @@ class Header extends Component {
 					<div className='quotes'>
 						<Quotes className='quote' />
 					</div>
-				</main>
-				<footer className='footer'>
-					<a href='https://www.pexels.com'>
+					<a className='pexel-container' href='https://www.pexels.com'>
 						<img
 							className='pexel-logo'
 							src='https://images.pexels.com/lib/api/pexels.png'
 							alt=''
 						/>
 					</a>
-				</footer>
+				</main>
 			</div>
 		);
 	}

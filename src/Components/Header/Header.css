@@ -31,6 +31,7 @@
 	color: transparent;
 	-webkit-text-stroke-width: 1px;
 	animation: shimmer2 45s infinite;
+	cursor: pointer;
 }
 
 .search-form {
@@ -57,15 +58,14 @@
 .quote {
 	margin-right: 2%;
 }
-.footer {
+.pexel-container {
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-start;
-	margin-top: 10%;
+	justify-content: center;
+	margin-top: 15%;
 }
 .pexel-logo {
-	width: 18%;
-	margin-top: -0.5%;
+	width: 8%;
 }
 
 @keyframes shimmer2 {
@@ -113,6 +113,6 @@
 		flex-direction: row;
 	}
 	.pexel-logo {
-		margin-top: -22%;
+		margin-top: 1%;
 	}
 }

@@ -5,10 +5,6 @@ import Form from 'react-bootstrap/Form';
 import './Welcome.css';
 
 class Welcome extends Component {
-	constructor() {
-		super();
-		this.state = {};
-	}
 	submitForm = (form) => {
 		form.preventDefault();
 		this.props.history.push('/home');
@@ -38,17 +34,19 @@ class Welcome extends Component {
 						</Form>
 					</div>
 				</header>
-				<img
-					className='welcome-image'
-					src={this.props.displayPhoto}
-					alt=''></img>
-				<a href='https://www.pexels.com'>
+				<main className='welcome-main'>
 					<img
-						className='pexel-image'
-						src='https://images.pexels.com/lib/api/pexels.png'
-						alt=''
-					/>
-				</a>
+						className='welcome-image'
+						src={this.props.displayPhoto}
+						alt=''></img>
+					<a className='welcome-pexel-container' href='https://www.pexels.com'>
+						<img
+							className='pexel-logo'
+							src='https://images.pexels.com/lib/api/pexels.png'
+							alt=''
+						/>
+					</a>
+				</main>
 			</div>
 		);
 	}

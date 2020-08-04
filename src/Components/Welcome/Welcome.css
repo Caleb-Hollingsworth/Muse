@@ -61,11 +61,17 @@
 		-webkit-text-stroke-color: rgb(138, 3, 248);
 	}
 }
-.pexel-image {
-	width: 8%;
-	margin-top: -5%;
+.welcome-main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
-
+.welcome-pexel-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 2%;
+}
 @media only screen and (max-width: 700px) {
 	.enter-form {
 		grid-column: 2 / span 2;
